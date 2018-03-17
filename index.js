@@ -1,14 +1,28 @@
-function theBeatlesPlay (musicians, instruments) {
+function theBeatlesPlay(musicians, instruments) {
   let finalArray = [];
-  for ( let i = 0; i < 4; i++ ){
-  finalArray.push(musicians[i] + " plays " + instruments[i]);
-}
-return finalArray
+  let x = musicians.length;
+
+  for(let i = 0; i < x; i++) {
+    finalArray.push(musicians[i] + " plays " + instruments[i])
+  }
+  return finalArray
 }
 
-function johnLennonFacts(facts) {
-  while ([i < facts.length]) {
-    facts[i] = facts[i] + "!!!"
+function johnLennonFacts(array) {
+  let x = array.length
+  let i = 0
+  while (i < x) {
+    array[i] += "!!!"
+    i++
   }
-  return facts
+  return array
+}
+
+function iLoveTheBeatles(number) {
+  let x = [];
+  do {
+    x.push("I love the Beatles!");
+    number++
+  } while (number < 15);
+  return x
 }
