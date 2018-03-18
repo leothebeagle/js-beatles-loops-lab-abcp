@@ -19,6 +19,7 @@ function iLoveTheBeatles(number) {
   let fan = [];
   do {
     fan.push("I love the Beatles!");
+    number++
   } while(number < 15);
   return fan
 }
